@@ -1,0 +1,153 @@
+body{
+  background: linear-gradient(45deg, #000000, hsl(240, 53%, 16%),#652477, #30265f, #4140AE);
+  background-size: 400% 400%;
+  height: 100vh;
+  animation: gradientAnimation 10s ease infinite;
+}
+/* gradient section */
+    :root {
+      --gradient: linear-gradient(45deg, #2B2F6C,#000000, #191970, #000000);
+    }
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+/* navbar section */
+.navbar {
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-top: 20px;
+
+}
+.nav-item{
+  text-decoration: none;
+  color: white;
+ 
+}
+div ul li{
+  display: inline-block;
+  margin-right: 10px;
+}
+.nav-logo{
+  width: 10rem;
+}
+.hero-section{
+  text-align: center;
+  margin-top: 50px;
+}
+.hero-image{
+  width: 25rem;
+}
+.event-date{
+  margin-top: 80px;
+  text-align: center;
+  background: linear-gradient(45deg, #000000, #30265f,#000000, #4140AE);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  border-radius: 20px;
+  padding: 10px;
+  width: 300px;
+}
+.event-date h2{
+  margin-top: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.date{
+  margin-bottom: 13px;
+  text-align: center;
+  font-family: 'unbounded', sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: bolder;
+  font-size: 0.6rem;
+  color: white;
+}
+
+.scroll{
+  margin-bottom: 0px;
+  margin-top: 70px;
+  text-align: center;
+  font-family: 'syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: white;
+  font-style: italic;
+}
+.arrow{
+margin-left: auto;
+margin-right: auto;
+  width: 7rem;
+  animation: move-the-circle 1s infinite;
+  transform-origin: center center;
+}
+
+@for $num from 1 through 8 {
+  .circle:nth-child(#{$num}) {
+    left: ($num - 1) * 30px;
+  }
+}
+
+@keyframes move-the-circle {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 25px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.about-TM{
+  color: white;
+  font-family: 'unbounded', sans-serif;
+  margin-top: 100px;
+  margin-left: 30px;
+  font-size: 1.2rem;
+}
+.events{
+  margin-left: 30px;
+  margin-top: 40px;
+  color: white;
+  font-family: 'unbounded', sans-serif;
+}
+.eventimages{
+  
+  margin-top: 20px;
+  width: 150px;
+  height:150px;
+  border-radius: 20%;
+  margin-left: 80px;
+}
+.event-description{
+  flex-wrap:wrap ;
+  color: white;
+  display: block;
+  font-family: 'unbounded', sans-serif;
+  margin-left:40px;
+}
+th, td{
+padding: 15px;
+ margin-left: auto;
+  margin-right: auto;
+}
+
+.abt{
+  color: white;
+  margin-top: 50px;
+}
+.hr{
+   
+  height: 10px;  
+}
